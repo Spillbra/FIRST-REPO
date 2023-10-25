@@ -1,0 +1,19 @@
+body h1 {
+      color: red;
+      font-size: 4em;
+      background-color: blue;
+    }
+
+  p {
+      color: blue
+      font-size: 2em;
+      background-color: red;
+      
+    }
+  header
+    {
+        background-color: red;
+        color: white;
+        padding: 1em;
+        overflow: hidden;
+    }
