@@ -1,34 +1,54 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>GameHub</title>
-        <meta name="description" content="this is a shop for games">
-        <meta name="viewport" content="width=device-width, intital-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
+        <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>SAY HELLO TO THE WORLD OF GAMES</h1>
+        <input type="checkbox" id="menu-checkbox" />
+        <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
+        <nav>
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="current">Contact</a>
+            </div>
+      </nav>
     </header>
-    <main>
-        <section>
-            <img src="GameHub_Logo.png"> 
-
-
-
-        </section>
-
-
-
-    </main>
-    <h1>Hello world this is a webpage</h1>
-    <p>Dette er en test for min første webside</p>
-    <h2>I am still learning</h2>
-    <h3>how to code</h3>
-    <li>
-        <a href="https://www.youtube.com/watch?v=Q33KBiDriJY">Link to youtube</a>
-        <img src="C:\Users\I148574\Downloads\GameHub_Logo.png" class="Gamehub logo">
-        <img src="C:\Users\I148574\OneDrive - NAV\Pictures\pow.png" class="pow"> 
-    </li>
+</body>
+<main>
+<section>
+    <h1>Say hello to the world of games</h1>
+    <p>This is the wold largest interactive game shop</p>
+</section>
+</main>
+<img src="C:\Users\I148574\Downloads\GameHub_Logo.png" alt="GameHub_Logo">
+<form action="form-success.php" method="POST">
+    <fieldset>
+        <legend>Your details</legend>
+        <label for="name">Your name</label>
+        <input type="text" name="name" id="name" class="form__input" required>
+        <label for="phone">Your phone number</label>
+        <input type="tel" name="phone" id="phone" class="form__input">
+        <label for="email">Your email address</label>
+        <input type="email" name="email" id="email" class="form__input" required>
+        <p>Select your gender</p>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="undisclosed" name="gender" value="undisclosed">
+        <label for="undisclosed">Undisclosed</label>
+    </fieldset>
+    <fieldset>
+        <legend>Your purchase</legend>
+        <select name="product">
+            <option value="product-one">Product One</option>
+            <option value="product-two">Product Two</option>
+            <option value="product-three">Product Three</option>
+        </select>
+    </fieldset>
+    <input type="submit" value="Buy product">
+</form>
 </body>
 </html>
